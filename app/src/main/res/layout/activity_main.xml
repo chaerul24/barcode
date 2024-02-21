@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        android:background="@color/black"
+        android:id="@+id/toolbar">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="3dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="3dp"
+        android:layout_width="100dp"
+        android:layout_height="110dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:id="@+id/image_home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@raw/barcodescan"/>
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/image_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan Code"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
